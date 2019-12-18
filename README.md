@@ -1,7 +1,6 @@
 # URL Shortener From Asgard - Client
 
-Demo project for Intuit
-
+Demo project front-end
 This project assumes you have the python server running on port 5000
 
 Start the project:
