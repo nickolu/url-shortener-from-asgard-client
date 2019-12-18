@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateUrl should render 1`] = `
+<div>
+  <h2>
+    Create a Shortened URL
+  </h2>
+  <p>
+    100 unique Asgardian words remain!
+  </p>
+  <div>
+    <strong>
+      Your Url:
+    </strong>
+     https://
+    <input />
+    <button>
+      Submit
+    </button>
+  </div>
+</div>
+`;
