@@ -13,7 +13,7 @@ class UserProfile extends Component {
         this.setUrlPairs = this.setUrlPairs.bind(this);
     }
 
-    async setUrlPairs(userId) {
+    async setUrlPairs() {
         if (!this.props.userId) {
             this.props.refreshUser();
         }
@@ -27,6 +27,7 @@ class UserProfile extends Component {
     componentDidMount() {
         this.setUrlPairs();
     }
+    
 
     render() {
         return (
@@ -50,7 +51,8 @@ class UserProfile extends Component {
 }
 
 UserProfile.propTypes = {
-    userId: PropTypes.string
+    userId: PropTypes.string,
+    refreshUser: PropTypes.func.isRequired
 };
 
 export { UserProfile };

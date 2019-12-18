@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Td = styled.td`
     padding: 8px;
@@ -10,7 +11,7 @@ const TableRow = ({ longUrl, shortUrl, timesAccessed }) => {
     return (
         <tr>
             <Td>
-                <a href={longUrl}>{longUrl}</a>
+                <a href={longUrl}>{encodeURI(longUrl)}</a>
             </Td>
             <Td>
                 <a href={`http://127.0.0.1:5000/${shortUrl}`}>

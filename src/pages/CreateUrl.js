@@ -30,7 +30,10 @@ class CreateUrl extends Component {
         const urlPair = await createNewUrlPair({ longUrl, userId });
 
         if (this.state.longUrl) {
-            this.setState({ shortUrl: urlPair.shortUrl });
+            this.setState(
+                { shortUrl: urlPair.shortUrl },
+                this.getRemainingWordsCount
+            );
         }
     }
 
